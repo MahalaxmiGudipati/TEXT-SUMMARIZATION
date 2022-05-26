@@ -1,0 +1,39 @@
+#framework
+streamlit==1.3.0
+
+#summerization
+gensim==3.8.3
+
+nltk==3.5
+Pattern==3.6
+spacy==3.2.1
+spacy_streamlit==1.0.2
+textblob==0.15.3
+
+#text to speech
+gTTS==2.2.2
+os
+time
+glob
+bs4
+urllib
+
+# File Processing Pkgs
+pandas
+docx2txt
+PyPDF2 
+PdfFileReader
+pdfplumber
+
+joblib==0.17.0
+emoji
+neattext
+networkx
+
+
+# for TFIDF
+https://pypi.org/project/tfidf/
+pip install tfidf
+
+
+pip install pdfminer.six
