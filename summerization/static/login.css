@@ -1,0 +1,86 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #D3D3D3 !important;
+}
+.user_card {
+    width: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #9e9292;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+
+}
+.ml-2{
+    color:black;
+}
+.form_container {
+    margin-top: 20px;
+}
+
+#form-title{
+    color: white;
+    
+}
+
+.login_btn {
+    width: 100%;
+    background: black !important;
+    color: white !important;
+    transition: 0.4s;
+}
+.login_btn:hover{
+    background: #848884;
+}
+.login_btn:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+.login_container {
+    padding: 0 2rem;
+}
+.input-group-text {
+    background: #2F4F4F !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.input_user,
+.input_pass:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+#messages{
+    background-color: grey;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+}
+.hello-msg{
+    font-size : 18px;
+    color : #fff;
+    margin-right:20px;
+  }
+  .button5{
+    text-align: center;
+    width:20%;
+    height:3%;
+    background-color:black;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+.button5:hover{
+    background-color: gray;
+}

@@ -1,0 +1,119 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lan="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Text Summarization</title>
+<link rel="stylesheet" type="text/css" href="{% static 'index.css' %}"> 
+  
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css";>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" 
+		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width,intial-scale=1.0">
+  <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    >
+  </script>
+	</head>
+<body>
+	<nav>
+		<div class="navbar">
+			<div class="logo"><a href="#">TEXT SUMMARIZATION</a></div>
+			<ul class="menu">
+				<li><a href="#Home">Home</a></li>
+				<li><a href="#Services">Services</a></li>
+				<li><a href="#Mission">Our mission</a></li>
+				<li><a href="#Contact">Contact us</a></li>
+				<li><a href="{% url 'login' %}"></a></li>
+        <span class="hello-msg">Hello,{{request.user}}</span>
+  <span ><a class="hello-msg" href="{% url 'logout' %}">Logout</a></span>
+			</ul>
+		</div>
+	</nav>
+
+
+  <section id="Home">
+    <pre>                                                                              </pre>
+    <b><p>Welcome To Our Summarizer!<br><br>
+      Valuing Your Time Always<br><br>
+      Upload Any File And Get Its Summary instantly<br><br>
+      <a href="{% url 'login' %}">
+      <button class="btn1" style="width:130px; height:40%;">Get Started</button></p></b><br><br><br>
+      </a>
+  </section> 
+  <section id="Services">
+  <div class="services">
+        <h1>Our Services</h1>
+        <div class="cen">
+          <div class="service">
+            <i class="fas fa-file-alt"></i>
+            <h2>TEXT SUMMARIZATION</h2><br>
+            <p>Providing you the summary of text using Extraction method.</p>
+            <p>We value your time.</p>
+          </div>
+  
+          <div class="service">
+            <i class="fas fa-volume-up"></i>
+            <h2>SPEECH</h2><br>
+            <p>You can listen your summarized text.</p>
+          </div>
+  
+          <div class="service">
+            <i class="fas fa-info-circle"></i>
+            <h2>DICTIONARY</h2><br>
+            <p>It provides the meaning,Parts of Speech,Synonym and Antonym of each word with example of summarized text.</p>
+          </div>
+          <br>
+          <div class="service">
+            <i class="fas fa-tags"></i>
+            <h2>NAMED ENTITY RECOGNITION</h2><br>
+            <p>It can automatically scan entire articles and reveal which are the major people,organizations and places discussed in them.
+              It adds a wealth of semantic knowledge to your content and helps you to promptly understand the subject of any given text.</p>
+          </div>
+          
+        </div>
+      </div>
+  </section>
+  <section id="Mission">
+   <b> <h1 style="color:#D3D3D3;">OUR MISSIONOURMISSION</h1></b>
+    <p style="text-align: center;"><b><b>OUR MISSION</b></b><br><br><br>Automatic text summarization is the task of producing a concise and fluent <br>summary while preserving key information of the content and overall meaning <br>using machine learning.
+       It takes care of choosing the most significant portions of text and <br>generates coherent summaries that expresses the main intent of the given document. 
+       The main <br>idea of summarization is to find a subset of data which contains the “information” of the entire set. <br>
+     <br>  In today’s world, data generation and consumption are exploding at an exponential rate. <br>
+       Due to this, text summarization has become the necessity of many applications such as search engines ,<br> business analysis, market review etc.
+     Automatic text summarization involves producing a summary<br> of the given text document without any human help. 
+        It is a viable solution to reduce the<br> information overload problem on the web and to reduce time instead Of reading the whole text file .
+       <br> It provides quick Information from large documents.<br>
+   <br>     Text summarization are of two types- Abstractive summarization and Extractive summarization .     <br>
+        In this project we focus on Extractive summarization . It focuses on extracting objects directly from the<br> entire collection without modifying the content Itself. 
+        Extractive summarizers takes sentences<br> as the input and produces a probability vector as output. To produce the final summary<br> best sentences are chosen according to the required summary length.
+        <br>
+    </p>
+  </section>
+  <section id="Contact">
+    <div class="container">
+      <div class="contact-box">
+        <div class="left">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.6508028487688!2d78.3804256147031!3d17.380528188082714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb942a2497f349%3A0x5c30ca8d2ffb8734!2sVasavi%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1639233442851!5m2!1sen!2sin" width="450" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="right">
+          <h2>Contact Us</h2>
+          <input type="text" class="field" placeholder="Your Name">
+          <input type="text" class="field" placeholder="Your Email">
+          <input type="text" class="field" placeholder="Phone">
+          <textarea placeholder="Message" class="field"></textarea>
+          <button class="btn">Send</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class "button">
+    <a href="#Home"><i class="fa fa-arrow-up fa-2x"></i>
+    </div>
+  </body>
+  </html>
