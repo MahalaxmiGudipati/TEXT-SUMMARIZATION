@@ -1,5 +1,5 @@
 # TEXT-SUMMARIZATION
-Provides a concise and fluent summary for a given content and overall meaning using machine learning algorithms.
+Provides a concise and fluent summary for a given content and overall meaning using Natural Language processing.
 
 Frontend with Django framework.
 
